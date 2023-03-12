@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <header class="header container-fluid  row m-0 p-0">
+
+        <div class="header__contenedor col-12 col-sm-4  ">
+            <div class="header__contenedor__logotipo  h-100 col-2 ">
+              <a href="index.html"><img class="img-fluid " src="img/img/Icono.webp" alt=""></a>  
+            </div>
+        </div>
+
+
+        <div class="header__titular text-white text-center col-12 col-sm-4  ">
+            <h1 class="fw-bolder">Detalloso</h1>
+            <h2 class="">Tienda de artesania y regalos</h2>
+        </div>
+
+
+        <div class="header__sesion  d-flex flex-column  col-12 col-sm-4  ">
+            <nav class="header__sesion__navegador d-flex h-100 m-1">
+                <div>
+                    <a class="text-decoration-none text-white" href="">Iniciar sesion </a>
+                    <a class="text-decoration-none text-white" href="registro.html"> Registro</a>
+                </div>
+               
+            </nav>
+            <p class=" header__sesion__parrafo text-white text-end me-1 "> Envio gratuito para compras superiores a 30€
+            </p>
+        </div>
+
+        <!-- Navegador -->
+        <nav class="header__navegador navbar navbar-expand-sm w-100">
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center ">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Especial San Valentín
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ofertas especiales</a></li>
+                                <li><a class="dropdown-item" href="#">Pare él</a></li>
+                                <li><a class="dropdown-item" href="#">Pare ella</a></li>
+                                <li><a class="dropdown-item" href="sanvalentin.html">Dúo para parejas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofertas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div></div>
+                                <img class="img-fluid" width="15" src="img/img/svg/search-1.svg" alt="">
+                            </a>
+                            <ul class="dropmenu formulariobusqueda dropdown-menu p-2">
+                                <li>
+                                    <form class=" d-flex" role="search">
+                                        <input class=" form-control me-2" type="search" placeholder="Introduce el texto"
+                                            aria-label="Search ">
+                                        <button class="botonbuscar btn btn-outline" type="submit">Buscar</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  " href="carrito.html"><img src="img/img/svg/bag-heart.svg" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="contenedor__hero ">
+        <img class="img-fluid" src="img/img/Carrito/carrito.webp" alt="">
+    </section>
+
+    <main class="contenedor">
+            <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Tu cesta está vacía <img src="img/img/Carrito/emoji.webp" alt=""></h2>
+                  <p class="card-text mt-4"><u>Inicía sesión</u> para recuperar tu carrito o visita nuestro catálogo para conocer las últimas novedades.</p>
+                </div>
+                <img src="img/img/Carrito/TeEsperamos.webp" class="card-img-bottom" alt="">
+              </div>
+            <div class="newsletter">
+                <h2 class="text_bold mt-4">¡Suscríbete a nuestra newsletter </h2>
+                <h2>para no perderte ninguna oferta!</h2>
+                <div class="input-group w-50 m-4">
+                    <input type="text" class="form-control" placeholder="Indique su dirección de correo electrónico" aria-label="email" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">¡Suscribete!</button>
+                  </div>
+                <p class="w-50">DETALLOSO S.L., como responsable del tratamiento, tratará tus datos con la finalidad de gestionar tu petición. Puedes ampliar esta información en nuestra <u>política de privacidad</u>, en la que también encontrarás cómo ejercer tus derechos.</p>
+                <div class="form-check mb-5">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        He leído y acepto las condiciones contenidas en la política de privacidad. *
+                    </label>
+                  </div>
+            </div>
+
+    </main>
+
+    <footer class="footer  w-100 d-flex align-items-center flex-column p-5">
+        <h3 class="text-white text-center">TODOS LOS DERECHOS RESERVADOS</h3>
+        <h3 class="text-white text-center">&#169; 2023 DETALLOSO</h3>
+        <nav class="footer__navegador d-flex  justify-content-around">
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/instagram.svg" alt="" width="20px"
+                    height="20px"></a>
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/facebook.svg" alt="" width="20px"
+                    height="20px"></a>
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/twitter.svg" alt="" width="20px"
+                    height="20px"></a>
+        </nav>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+@use'variables' as v; //VARIABLES
+@use 'mixins' as m;
+
+//MODIFICACIONES GLOBALES
+@font-face {
+    font-family: 'principal';
+    src: url(../fonts/Lemonada/Lemonada-VariableFont_wght.ttf);
+
+}
+
+@font-face {
+    font-family: 'secundaria';
+    src: url(../fonts/Lemonada/static/Lemonada-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'titulares';
+    src: url(../fonts/Lemonada/static/Lemonada-Bold.ttf);
+
+}
+
+
+html {
+    font-size: 80%;
+
+    body {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px auto;
+        background-color: v.$primario;
+        font-family: 'principal';
+        color: v.$cuarto;
+        min-width: 250px;
+    }
+}
+
+h1,
+h3,
+h5,
+h6 {
+    font-family: 'titulares';
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'secundaria';
+}
+
+
+
+//HEADER
+.header {
+    background-color: v.$secundario;
+
+    &__contenedor {
+        &__logotipo {
+            width: 125px;
+            height: 125px;
+
+            @media screen and (max-width:576px) {
+                margin: 0px auto;
+            }
+
+        }
+    }
+
+
+
+    &__sesion {
+        align-items: flex-end;
+
+        @media screen and (max-width:576px) {
+            margin: 0px auto;
+            align-items: center;
+        }
+
+        a:first-child {
+            &::after {
+                content: '  /  ';
+            }
+        }
+
+    }
+
+    &__navegador {
+
+        font-family: 'titulares';
+        border-bottom: 2px solid v.$cuarto;
+        background-color: v.$primario;
+    }
+    .dropdown-menu {
+        background-color: v.$primario;
+        color: v.$cuarto;
+        :hover{
+            background-color: v.$cuarto;
+            color: white;
+        }
+    }
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width:992px) {
+        //TABLET
+        flex-direction: column;
+
+        .contenedor__formulario {
+            width: 80%;
+            p{
+                font-size: small;
+            }
+        }
+
+        .contenedor__informacion {
+            display: flex;
+            width: 70%;
+            align-items: center;
+            flex-direction: column;
+            font-size: small;
+            margin-bottom: 2rem;
+            &__producto,
+            &__formar,
+            &__distribuir {
+                display: flex;
+
+            }
+        }
+    }
+
+    &__formulario {
+        display: flex;
+        width: 40%;
+        align-items: center;
+        flex-direction: column;
+        background-color: v.$secundario;
+
+        button {
+            background-color: v.$terciario
+        }
+
+    }
+
+    &__informacion {
+        display: flex;
+        width: 40%;
+        align-items: center;
+        flex-direction: column;
+
+        &__producto,
+        &__formar,
+        &__distribuir {
+            display: flex;
+
+        }
+    }
+
+    &__texto__producto,
+    &__texto__distribuir,
+    &__texto__formar {
+
+        &__email,
+        &__telefono,
+        &__horario {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    &__icono__producto,
+    &__icono__formar,
+    &__icono__distribuir {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+    }
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: v.$terciario;
+
+    .text_bold {
+        font-family: 'titulares';
+    }
+
+    .input-group {
+        border: 1px solid v.$cuarto;
+        border-radius: 10px;
+        height: 50px;
+
+        input {
+            background-color: v.$primario;
+        }
+
+        button {
+            background-color: v.$secundario;
+            color: white;
+        }
+    }
+
+    p {
+        width: 50%;
+        text-align: center;
+        font-size: large;
+    }
+
+    .form-check {
+        font-size: small;
+    }
+    @media screen and (max-width:992px) {
+            p {
+                width: 90%;
+                text-align: left;
+                font-size: small;
+            }
+        
+            .form-check {
+                font-size: small;
+            }
+        
+    }
+}
+
+.footer {
+    border-top: 1px solid v.$cuarto;
+    box-shadow: 5px 1px 5px v.$cuarto;
+    background-color: v.$secundario;
+}
+
+//Modificaciones puntuales
+.formulario {
+    width: 95%;
+}
+
+.formulariobusqueda {
+    background-color: v.$primario;
+}
+
+.botonbuscar {
+    background-color: v.$secundario;
+}

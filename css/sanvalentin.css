@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "principal";
+  src: url(../fonts/Lemonada/Lemonada-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "secundaria";
+  src: url(../fonts/Lemonada/static/Lemonada-Regular.ttf);
+}
+@font-face {
+  font-family: "titulares";
+  src: url(../fonts/Lemonada/static/Lemonada-Bold.ttf);
+}
+html {
+  font-size: 80%;
+}
+html body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #ffc9dc;
+  font-family: "principal";
+  color: #402136;
+  min-width: 250px;
+}
+
+h1,
+h3,
+h5,
+h6 {
+  font-family: "titulares";
+}
+
+h2 {
+  font-family: "secundaria";
+}
+
+p {
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #bf63a1;
+}
+.header__contenedor__logotipo {
+  width: 125px;
+  height: 125px;
+}
+@media screen and (max-width: 576px) {
+  .header__contenedor__logotipo {
+    margin: 0px auto;
+  }
+}
+.header__sesion {
+  align-items: flex-end;
+}
+@media screen and (max-width: 576px) {
+  .header__sesion {
+    margin: 0px auto;
+    align-items: center;
+  }
+}
+.header__sesion a:first-child::after {
+  content: "  /  ";
+}
+.header__navegador {
+  font-family: "titulares";
+  border-bottom: 2px solid #402136;
+  background-color: #ffc9dc;
+}
+.header .dropdown-menu {
+  background-color: #ffc9dc;
+  color: #402136;
+}
+.header .dropdown-menu :hover {
+  background-color: #402136;
+  color: white;
+}
+
+.contenedor {
+  margin: 0px auto;
+  width: 100%;
+}
+.contenedor__seccion1__img a {
+  background-color: #bf63a1;
+}
+.contenedor__seccion2 {
+  width: 90%;
+  margin: 0px auto;
+}
+.contenedor__seccion2__form {
+  background-color: #ffe3ed;
+  height: 600px;
+  border: 1px solid #bf63a1;
+}
+.contenedor__seccion2 .flex {
+  display: flex;
+}
+.contenedor__seccion2 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img3 img4 img5" "img3 img6 img7";
+}
+.contenedor__seccion2 .grid .img3,
+.contenedor__seccion2 .grid .img4,
+.contenedor__seccion2 .grid .img5,
+.contenedor__seccion2 .grid .img6,
+.contenedor__seccion2 .grid .img7 {
+  width: 100%;
+  height: 100%;
+}
+.contenedor__seccion2 .grid img {
+  width: 80%;
+  height: 80%;
+}
+.contenedor__seccion2 .img3 {
+  grid-area: img3;
+}
+.contenedor__seccion2 .img3 img {
+  height: 90%;
+  width: 90%;
+}
+.contenedor__seccion2 .img4 {
+  grid-area: img4;
+}
+.contenedor__seccion2 .img5 {
+  grid-area: img5;
+}
+.contenedor__seccion2 .img6 {
+  grid-area: img6;
+}
+.contenedor__seccion2 .img7 {
+  grid-area: img7;
+}
+@media screen and (max-width: 768px) {
+  .contenedor__seccion2 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "img3 img4" "img5 img6" "img7 img7";
+  }
+  .contenedor__seccion2 .grid .img3,
+  .contenedor__seccion2 .grid .img4,
+  .contenedor__seccion2 .grid .img5,
+  .contenedor__seccion2 .grid .img6,
+  .contenedor__seccion2 .grid .img7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor__seccion2 .grid img {
+    width: 70%;
+    height: 70%;
+  }
+  .contenedor__seccion2 .img3 {
+    grid-area: img3;
+  }
+  .contenedor__seccion2 .img4 {
+    grid-area: img4;
+  }
+  .contenedor__seccion2 .img5 {
+    grid-area: img5;
+  }
+  .contenedor__seccion2 .img6 {
+    grid-area: img6;
+  }
+  .contenedor__seccion2 .img7 {
+    grid-area: img7;
+  }
+}
+
+.footer {
+  border-top: 1px solid #402136;
+  box-shadow: 5px 1px 5px #402136;
+  background-color: #bf63a1;
+}
+
+.formulario {
+  width: 95%;
+}
+
+.formulariobusqueda {
+  background-color: #ffc9dc;
+}
+
+.botonbuscar {
+  background-color: #bf63a1;
+}
+
+/*# sourceMappingURL=sanvalentin.css.map */

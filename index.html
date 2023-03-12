@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <title>Document</title>
+</head>
+<body class="">
+
+    <header class="header container-fluid  row m-0 p-0">
+
+        <div class="header__contenedor col-12 col-sm-4  ">
+            <div class="header__contenedor__logotipo  h-100 col-2 ">
+                <img class="img-fluid " src="img/img/Icono.webp" alt="">
+            </div>
+        </div>
+
+
+        <div class="header__titular text-white text-center col-12 col-sm-4  ">
+            <h1 class="fw-bolder">Detalloso</h1>
+            <h2 class="">Tienda de artesania y regalos</h2>
+        </div>
+
+
+        <div class="header__sesion  d-flex flex-column  col-12 col-sm-4  ">
+            <nav class="header__sesion__navegador d-flex h-100 m-1">
+                <div>
+                    <a class="text-decoration-none text-white" href="registro.html">Iniciar sesion </a>
+                    <a class="text-decoration-none text-white" href="registro.html"> Registro</a>
+                </div>
+               
+            </nav>
+            <p class=" header__sesion__parrafo text-white text-end me-1 "> Envio gratuito para compras superiores a 30€
+            </p>
+        </div>
+
+
+
+
+
+
+        <!-- Navegador -->
+        <nav class="header__navegador navbar navbar-expand-sm w-100">
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center ">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Especial San Valentín
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ofertas especiales</a></li>
+                                <li><a class="dropdown-item" href="#">Pare él</a></li>
+                                <li><a class="dropdown-item" href="#">Pare ella</a></li>
+                                <li><a class="dropdown-item" href="sanvalentin.html">Dúo para parejas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofertas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div></div>
+                                <img class="img-fluid" width="15" src="img/img/svg/search-1.svg" alt="">
+                            </a>
+                            <ul class="dropmenu formulariobusqueda dropdown-menu p-2">
+                                <li>
+                                    <form class=" d-flex" role="search">
+                                        <input class=" form-control me-2" type="search" placeholder="Introduce el texto"
+                                            aria-label="Search ">
+                                        <button class="botonbuscar btn btn-outline" type="submit">Buscar</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  " href="carrito.html"><img src="img/img/svg/bag-heart.svg" alt=""></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- contenido principal -->
+    <main class="contenedor  m-0 p-0">
+
+        <!-- Hero -->
+         <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img/Index/Hero_Index.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img/Index/Hero_Index2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+    <!-- Primera seccion ventas -->
+        <h1 class="Top_ventas w-100 text-center mt-4 ">Top Ventas</h1>
+
+        <section class="contenedor__seccion1 container-fluid row  mb-5 p-5">
+    
+                <!-- cards -->
+                <div class="contenedor__seccion1__card col-xs-12 col-md-6 col-lg-4">
+    
+                    <div class="contenedor__seccion1__card__imagen1 rounded-5 mb-2">
+                        <img class="img-fluid rounded-5" src="img/img/Index/rosito.webp" alt="">
+                    </div>
+    
+                    <div class="card-body text-center">
+                        <h5 class="card-text">Peluche Rosito</h5>
+                        <p>14,99€</p>
+                    </div>
+                </div>
+            
+    
+           
+                <div class="contenedor__seccion1__card col-xs-12 col-md-6 col-lg-4 " >
+                    <div class="contenedor__seccion1__card__imagen2 rounded-5 mb-2">
+                        <img class="img-fluid rounded-5" src="img/img/Index/alpacosayrosito.webp" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-text">Duo Alpacosa y Rosito</h5>
+                        <p>24,99€</p>
+    
+                    </div>
+                </div>
+    
+           
+                <div class="contenedor__seccion1__card col-xs-12 col-md-6 col-lg-4">
+                    
+                    <div class="contenedor__seccion1__card__imagen3 rounded-5 mb-2">
+                        <img class="img-fluid rounded-5" src="img/img/Index/alpacosa.jpg" alt="">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-text">Peluche Alpacosa</h5>
+                        <p>14,94€</p>
+                    </div>
+
+
+                </div>
+        
+</section>
+
+
+     <!-- segunda seccion novedades -->
+    <h1 class="Top_ventas w-100 text-center mt-4 ">Novedades</h1>
+
+    <section class="contenedor__seccion2 container-fluid row  mb-5 p-5">
+    
+            <!-- cards -->
+            <div class="contenedor__seccion2__card col-xs-12 col-md-6 col-lg-4">
+
+                <div class="contenedor__seccion2__card__imagen1 rounded-5 mb-2">
+                    <img class="img-fluid rounded-5" src="img/img/Index/vela1.webp" alt="">
+                </div>
+
+                <div class="card-body text-center">
+                    <h5 class="card-text">Velas Ambrosía</h5>
+                    <p>5,99€</p>
+                </div>
+            </div>
+        
+
+       
+            <div class="contenedor__seccion2__card col-xs-12 col-md-6 col-lg-4 ">
+
+                <div class="contenedor__seccion2__card__imagen2 rounded-5 mb-2">
+                    <img class="img-fluid rounded-5" src="img/img/Index/vela2.webp" alt="">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-text">Duo namaste y Svasti</h5>
+                    <p>9,99€</p>
+
+                </div>
+            </div>
+        
+       
+            <div class="contenedor__seccion2__card col-xs-12 col-md-6 col-lg-4 ">
+                <div class="contenedor__seccion2__card__imagen3 rounded-5 mb-2">
+                    <img class="img-fluid rounded-5" src="img/img/Index/vela3.webp" alt="">
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-text">vela Inefable</h5>
+                    <p>4,99€</p>
+                </div>
+            </div>
+    
+</section>
+
+    <!-- hero noticias con corazon -->
+    <section class="contenedor__hero__noticias img-fluid  mt-5"></section>
+
+
+<section class="contenedor__seccion3 d-flex flex-column align-items-center pt-5 pb-5 ">
+
+    <article class="contenedor__seccion3__card row g-3 rounded-3 p-3  mb-5">
+        <div class="contenedor__seccion3__card__imagen  col-xs-12 col-md-4 col-lg-3">
+            <img src="img/img/Index/conejoCumple.webp" class="img-fluid rounded-3" alt="">
+        </div>
+    
+        <div class="contenedor__seccion3__card__texto col-xs-12 col-md-8 col-lg-9">
+            <h3 class="mb-4">¡Un año más a vuestro lado!</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam odit aut,
+                velit illo quos omnis officia sunt repellendus earum soluta accusamus maiores
+                assumenda quas ducimus quod nemo eligendi commodi voluptatem.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam odit aut,
+                velit illo quos omnis officia sunt repellendus earum soluta accusamus maiores
+            </p>
+        </div>
+    </article>
+
+
+
+    <article class="contenedor__seccion3__card row g-3 rounded-3 p-3">
+
+        <div class="contenedor__seccion3__card__imagen col-xs-12 col-md-4 col-lg-3 ">
+            <img src="img/img/Index/rosaRosa.webp" class="img-fluid rounded-3" alt="">
+        </div>
+    
+        <div class="contenedor__seccion3__card__texto col-xs-12 col-md-8 col-lg-9">
+            <h3 class="mb-4">Feliz día de las Madres</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam odit aut,
+                velit illo quos omnis officia sunt repellendus earum soluta accusamus maiores
+                assumenda quas ducimus quod nemo eligendi commodi voluptatem.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam odit aut,
+                velit illo quos omnis officia sunt repellendus earum soluta accusamus maiores
+            </p>
+        </div>
+    </article>
+   
+</section>
+    
+    
+    </main>
+
+    
+
+
+    <footer class="footer  w-100  d-flex align-items-center flex-column p-5">
+
+        <h3 class="text-white text-center">TODOS LOS DERECHOS RESERVADOS</h3>
+        <h3 class="text-white text-center">&#169; 2023 DETALLOSO</h3>
+        <nav class="footer__navegador d-flex  justify-content-around">
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/instagram.svg" alt="" width="20px"
+                    height="20px"></a>
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/facebook.svg" alt="" width="20px"
+                    height="20px"></a>
+            <a class="text-white nav-link m-2" href=""><img src="img/img/svg/twitter.svg" alt="" width="20px"
+                    height="20px"></a>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

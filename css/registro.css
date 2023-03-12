@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "principal";
+  src: url(../fonts/Lemonada/Lemonada-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "secundaria";
+  src: url(../fonts/Lemonada/static/Lemonada-Regular.ttf);
+}
+@font-face {
+  font-family: "titulares";
+  src: url(../fonts/Lemonada/static/Lemonada-Bold.ttf);
+}
+html {
+  font-size: 80%;
+}
+html body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #ffc9dc;
+  font-family: "principal";
+  color: #402136;
+  min-width: 250px;
+}
+
+h1,
+h3,
+h5,
+h6 {
+  font-family: "titulares";
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "secundaria";
+}
+
+.header {
+  background-color: #bf63a1;
+}
+.header__contenedor__logotipo {
+  width: 125px;
+  height: 125px;
+}
+@media screen and (max-width: 576px) {
+  .header__contenedor__logotipo {
+    margin: 0px auto;
+  }
+}
+.header__sesion {
+  align-items: flex-end;
+}
+@media screen and (max-width: 576px) {
+  .header__sesion {
+    margin: 0px auto;
+    align-items: center;
+  }
+}
+.header__sesion a:first-child::after {
+  content: "  /  ";
+}
+.header__navegador {
+  font-family: "titulares";
+  border-bottom: 2px solid #402136;
+  background-color: #ffc9dc;
+}
+.header .dropdown-menu {
+  background-color: #ffc9dc;
+  color: #402136;
+}
+.header .dropdown-menu :hover {
+  background-color: #402136;
+  color: white;
+}
+
+.contenedor {
+  width: 100%;
+  margin: 0px auto;
+}
+.contenedor__formulario {
+  margin: 0px auto;
+  background-color: #bf63a1;
+  width: 60%;
+}
+.contenedor__formulario__checks__parrafo {
+  background-color: #ffe3ed;
+}
+
+.footer {
+  border-top: 1px solid #402136;
+  box-shadow: 5px 1px 5px #402136;
+  background-color: #bf63a1;
+}
+
+.formulario {
+  width: 95%;
+}
+
+.formulariobusqueda {
+  background-color: #ffc9dc;
+}
+
+.botonbuscar {
+  background-color: #bf63a1;
+}
+
+/*# sourceMappingURL=registro.css.map */

@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "principal";
+  src: url(../fonts/Lemonada/Lemonada-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "secundaria";
+  src: url(../fonts/Lemonada/static/Lemonada-Regular.ttf);
+}
+@font-face {
+  font-family: "titulares";
+  src: url(../fonts/Lemonada/static/Lemonada-Bold.ttf);
+}
+html {
+  font-size: 80%;
+}
+html body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #ffc9dc;
+  font-family: "principal";
+  color: #402136;
+  min-width: 250px;
+}
+
+h1,
+h3,
+h5,
+h6 {
+  font-family: "titulares";
+}
+
+h2 {
+  font-family: "secundaria";
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #ffc9dc;
+  font-family: "principal";
+  color: #402136;
+}
+
+h1,
+h3,
+h5,
+h6 {
+  font-family: "titulares";
+}
+
+h2 {
+  font-family: "secundaria";
+}
+
+p {
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #bf63a1;
+  width: 100%;
+  margin: 0px auto;
+}
+.header__contenedor__logotipo {
+  width: 125px;
+  height: 125px;
+}
+@media screen and (max-width: 576px) {
+  .header__contenedor__logotipo {
+    margin: 0px auto;
+  }
+}
+.header__sesion {
+  align-items: flex-end;
+}
+@media screen and (max-width: 576px) {
+  .header__sesion {
+    margin: 0px auto;
+    align-items: center;
+  }
+}
+.header__sesion a:first-child::after {
+  content: "  /  ";
+}
+.header__navegador {
+  font-family: "titulares";
+  border-bottom: 2px solid #402136;
+  background-color: #ffc9dc;
+}
+.header .dropdown-menu {
+  background-color: #ffc9dc;
+  color: #402136;
+}
+.header .dropdown-menu :hover {
+  background-color: #402136;
+  color: white;
+}
+
+.contenedor__seccion1 {
+  background-color: #ffe3ed;
+  width: 100%;
+  margin: 0px auto;
+}
+.contenedor__seccion1__card {
+  margin: auto;
+}
+.contenedor__seccion2 {
+  background-color: #ffe3ed;
+  width: 100%;
+  margin: 0px auto;
+}
+.contenedor__seccion2__card {
+  margin: auto;
+}
+.contenedor__hero__noticias {
+  background-image: url(../img/img/Index/noticiasConCorazon.webp);
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 1px 5px #402136;
+}
+.contenedor__seccion3 {
+  width: 100%;
+  margin: 0px auto;
+}
+@media screen and (min-width: 992px) {
+  .contenedor__seccion3 p {
+    font-size: x-large;
+  }
+}
+.contenedor__seccion3__card {
+  width: 80%;
+  background-color: #ffe3ed;
+  border: 2px solid #402136;
+  box-shadow: 0px 1px 5px #402136;
+  margin: 0px;
+}
+.contenedor__seccion3__card__texto {
+  line-height: 2;
+}
+
+.footer {
+  border-top: 1px solid #402136;
+  box-shadow: 5px 1px 5px #402136;
+  background-color: #bf63a1;
+}
+
+.formulario {
+  width: 95%;
+}
+
+.formulariobusqueda {
+  background-color: #ffc9dc;
+}
+
+.botonbuscar {
+  background-color: #bf63a1;
+}
+
+/*# sourceMappingURL=principal.css.map */
